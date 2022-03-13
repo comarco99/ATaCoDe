@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>it.unisa.intellij--plugin</id>
+    <name>PangeaUntangler</name>
+    <vendor email="ambrosio.s@outlook.it" url="https://sesalab.github.io/">SeSa Lab</vendor>
+
+    <description><![CDATA[
+    Untangler is an intellij plugin which detects and resolve Tangled Changes before commit.
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <checkinHandlerFactory implementation="window.CommitHandler"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
